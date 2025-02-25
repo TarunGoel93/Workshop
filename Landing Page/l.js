@@ -72,3 +72,14 @@ function eraseEffect() {
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(typeEffect, 500);
 });
+
+
+
+
+
+    document.querySelectorAll(".faq-question").forEach(button => {
+        button.addEventListener("click", () => {
+            const faqItem = button.parentElement;
+            faqItem.classList.toggle("active");
+        });
+    });
